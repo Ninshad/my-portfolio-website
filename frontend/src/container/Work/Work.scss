@@ -25,7 +25,8 @@
     margin: 0.5rem;
 
     &:hover {
-      background-color: var(--secondary-color);
+      // background-color: var(--secondary-color);
+      background-image: linear-gradient(to right, rgb(255, 61, 48), rgb(255, 43, 97));
       color: #fff;
     }
 
@@ -36,7 +37,8 @@
   }
 
   .item-active {
-    background-color: var(--secondary-color);
+    // background-color: var(--secondary-color);
+    background-image: linear-gradient(to right, rgb(255, 61, 48), rgb(255, 43, 97));
     color: #fff;
   }
 }

@@ -13,11 +13,13 @@ const Skills = () => {
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
   const [backendSkills, setBackendSkills] = useState([]);
+  const [theme, setTheme] = useState([]);
 
   useEffect(() => {
     const query = '*[_type == "experiences"]';
     const skillsQuery = '*[_type == "skills"]';
     const backendSkillsQuery = '*[_type == "backendSkills"]';
+    const themeQuery = '*[_type == "theme"]';
 
     client.fetch(query).then((data) => {
       setExperiences(data);
@@ -30,9 +32,13 @@ const Skills = () => {
     client.fetch(backendSkillsQuery).then((data) => {
       setBackendSkills(data);
     });
+
+    client.fetch(themeQuery).then((data) => {
+      setTheme(data);
+    });
   }, []);
 
-  console.log('backendSkills', backendSkills);
+  console.log('theme', theme);
   return (
     <>
       <h2 className="head-text">Skills & Experiences</h2>

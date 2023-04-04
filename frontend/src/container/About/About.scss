@@ -40,9 +40,15 @@
 
 .app__profile-about-item{
   p{
-    color: #fff;
+      color: #000;
       font-size: 2rem;
       letter-spacing: 3px;
+  }
+
+  @media screen and (max-width: 950px) {
+    p{
+      font-size: 1rem;
+    }
   }
   
 }
