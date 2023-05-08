@@ -39,6 +39,8 @@ const Skills = () => {
   }, []);
 
   console.log('theme', theme);
+  console.log('skills', skills);
+
   return (
     <>
       <h2 className="head-text">Skills & Experiences</h2>

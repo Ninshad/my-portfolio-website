@@ -52,3 +52,29 @@
   }
   
 }
+
+
+.app__resume {
+  display: flex;
+  flex-direction: row;
+  justify-content: center!important;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 4rem 0 2rem;
+
+
+  .item-active {
+    // background-color: var(--secondary-color);
+    background-image: linear-gradient(to right, rgb(255, 61, 48), rgb(255, 43, 97));
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+
+    &:hover {
+      background-image: linear-gradient(to right, #ea1000, #ea1000);
+    }
+  }
+  
+}
